@@ -1,86 +1,146 @@
+# Dasar Pemrograman Python - Pertemuan 1
 
-# Pertemuan 1: Fondasi Python - Instalasi dan Konsep Dasar
+Selamat datang di pertemuan pertama belajar dasar-dasar pemrograman dengan Python! Di sesi ini, kita akan menyiapkan semua yang dibutuhkan dan mempelajari konsep paling fundamental.
 
-Pada pertemuan ini, kita akan membangun fondasi yang kuat untuk memulai perjalanan Anda dengan Python. Di akhir sesi, Anda akan bisa menulis program sederhana yang berinteraksi dengan pengguna.
+### Daftar Isi
+1.  [Instalasi & Setup Lingkungan](#1-instalasi--setup-lingkungan)
+2.  [Tipe Data Dasar](#2-tipe-data-dasar)
+3.  [Operator dan Ekspresi](#3-operator-dan-ekspresi)
+4.  [Input dan Output](#4-input-dan-output)
+5.  [Error Umum dan Debugging Dasar](#5-error-umum-dan-debugging-dasar)
+6.  [Latihan & Penjelasan Error](#6-latihan--penjelasan-error)
+7.  [Penugasan](#7-penugasan)
 
-### 1. Instalasi Python & Visual Studio Code
+---
 
-Sebelum mulai, kita perlu menyiapkan "alat tempur" kita.
+### 1. Instalasi & Setup Lingkungan
 
-**A. Instalasi Python**
-1.  Kunjungi situs resmi Python: [python.org/downloads/](https://www.python.org/downloads/)
-2.  Unduh versi Python terbaru.
-3.  Jalankan installer. **PENTING:** Pada jendela instalasi pertama, centang kotak yang bertuliskan **"Add Python to PATH"**.
-4.  Lanjutkan instalasi hingga selesai.
+Untuk mulai menulis kode Python, kita butuh dua hal: **Python** itu sendiri dan sebuah **editor teks**.
 
-**B. Instalasi Visual Studio Code (VS Code)**
-1.  Kunjungi situs resmi VS Code: [code.visualstudio.com/](https://code.visualstudio.com/)
-2.  Unduh dan install VS Code.
-3.  Setelah terinstal, buka VS Code, buka menu **Extensions** (ikon balok di sisi kiri), cari dan install ekstensi bernama **"Python"** dari Microsoft.
+* **Pilihan A (Offline):** Instal **[Python](https://www.python.org/downloads/)** (jangan lupa centang "Add Python to PATH") dan **[Visual Studio Code](https://code.visualstudio.com/)**. Di VS Code, instal ekstensi "Python" dari Microsoft.
+* **Pilihan B (Online):** Gunakan **[Replit](https://replit.com/)**. Cukup daftar, buat "Repl" baru, dan pilih template "Python".
 
-### 2. Menjalankan Kode Python Pertama Anda
-1.  Buat folder baru di komputer Anda untuk menyimpan semua proyek kursus ini.
-2.  Buka VS Code, lalu buka folder tersebut melalui `File > Open Folder...`.
-3.  Buat file baru dengan nama `hello.py`.
-4.  Ketik kode berikut di dalam file `hello.py`:
+---
+
+### 2. Tipe Data Dasar
+
+Tipe data adalah kategori nilai yang bisa disimpan oleh variabel.
+
+| Tipe Data | Nama | Deskripsi | Contoh |
+| :--- | :--- | :--- | :--- |
+| `int` | Integer | Bilangan bulat | `umur = 25` |
+| `float` | Float | Bilangan desimal | `harga = 15000.50` |
+| `str` | String | Teks (diapit `" "` atau `' '`) | `nama = "Budi"` |
+| `bool` | Boolean | `True` atau `False` | `is_active = True` |
+
+---
+
+### 3. Operator dan Ekspresi
+
+Operator digunakan untuk melakukan operasi pada nilai.
+
+* **Aritmatika:** `+`, `-`, `*`, `/`, `%` (sisa bagi), `**` (pangkat).
+* **Perbandingan:** `==` (sama dengan), `!=` (tidak sama dengan), `>`, `<`.
+* **Logika:** `and`, `or`.
+
+Sebuah **ekspresi** adalah kombinasi nilai dan operator yang menghasilkan nilai baru. Contoh: `(10 + 5) * 2`.
+
+---
+
+### 4. Input dan Output
+
+* **Output `print()`:** Menampilkan informasi ke layar.
     ```python
-    print("Hello, World!")
-    ```
-5.  Untuk menjalankannya, buka Terminal di VS Code (`View > Terminal` atau `Ctrl+``), lalu ketik perintah:
-    ```bash
-    python hello.py
-    ```
-6.  Anda akan melihat teks `Hello, World!` muncul di terminal.
-
-### 3. Pengenalan Variabel dan Tipe Data
-**Variabel** adalah sebuah nama yang kita berikan pada sebuah "wadah" untuk menyimpan data.
-
-Setiap nilai memiliki **Tipe Data** yang menentukan jenisnya:
--   **`String`** (str): Teks. Diapit oleh tanda kutip (`"` atau `'`).
-    ```python
-    alamat = "Jalan Merdeka No. 17"
-    ```
--   **`Integer`** (int): Bilangan bulat.
-    ```python
-    jumlah_siswa = 30
-    ```
--   **`Float`**: Bilangan desimal.
-    ```python
-    indeks_prestasi = 3.85
-    ```
--   **`Boolean`** (bool): Nilai kebenaran, `True` atau `False`.
-    ```python
-    sedang_hujan = False
+    nama = "Siti"
+    print(f"Halo, nama saya {nama}") # f-string adalah cara modern dan mudah
     ```
 
-### 4. Operator Aritmatika
-Digunakan untuk melakukan operasi matematika.
-
-| Operator | Nama             | Contoh (`a=10`, `b=3`) | Hasil |
-| :------: | :--------------- | :-------------------- | :---: |
-|   `+`    | Penjumlahan      | `a + b`               | `13`  |
-|   `-`    | Pengurangan      | `a - b`               | `7`   |
-|   `*`    | Perkalian        | `a * b`               | `30`  |
-|   `/`    | Pembagian        | `a / b`               | `3.33`|
-|   `%`    | Modulus          | `a % b`               | `1`   |
-|   `**`   | Pangkat          | `a ** b`              | `1000`|
-|   `//`   | Pembagian Bulat  | `a // b`              | `3`   |
-
-### 5. Fungsi Input dan Output
--   **Output: `print()`**: Menampilkan informasi ke layar.
+* **Input `input()`:** Menerima masukan dari pengguna. **PENTING:** `input()` selalu menghasilkan data bertipe **string (`str`)**.
     ```python
-    nama = "Ani"
-    print(f"Halo, nama saya adalah {nama}") # f-string direkomendasikan
-    ```
--   **Input: `input()`**: Meminta masukan dari pengguna. **PENTING:** `input()` selalu menghasilkan data bertipe `string`!
-    ```python
-    nama_pengguna = input("Siapa nama Anda? ")
+    # Meminta nama (hasilnya sudah string, tidak perlu diubah)
+    nama_pengguna = input("Masukkan nama Anda: ")
+
+    # Meminta usia dan mengubahnya menjadi integer
+    usia_pengguna = int(input("Masukkan usia Anda: "))
     ```
 
-### 6. Konversi Tipe Data (Type Casting)
-Karena `input()` menghasilkan `string`, kita harus mengubahnya jika ingin melakukan operasi matematika.
-```python
-tahun_lahir_str = input("Tahun berapa Anda lahir? ")
-tahun_lahir_int = int(tahun_lahir_str) # Konversi ke integer
-umur = 2025 - tahun_lahir_int
-print(f"Umur Anda sekarang sekitar {umur} tahun.")
+---
+
+### 5. Error Umum dan Debugging Dasar
+
+Error adalah hal yang wajar. Kenali tiga jenis error dasar ini:
+
+1.  **`SyntaxError`**: Aturan penulisan kode dilanggar.
+    * **Contoh:** Lupa tanda kurung, kutip, atau titik dua.
+    * **Kode Salah:** `print("Halo Dunia` (lupa `)`).
+    * **Solusi:** Periksa kembali penulisan kode Anda.
+
+2.  **`TypeError`**: Operasi pada tipe data yang tidak cocok.
+    * **Contoh:** Menjumlahkan angka dengan teks.
+    * **Kode Salah:** `hasil = 20 + " tahun"`
+    * **Solusi:** Pastikan tipe data sesuai. Ubah angka ke string dengan `str(20)` atau sebaliknya.
+
+3.  **`NameError`**: Menggunakan variabel yang belum dibuat atau salah ketik.
+    * **Contoh:** Variabel `nama` dipanggil dengan `naama`.
+    * **Kode Salah:** `print(naama)`
+    * **Solusi:** Periksa kembali ejaan nama variabel.
+
+---
+
+### 6. Latihan & Penjelasan Error
+
+Mari praktikkan konsep di atas dengan membuat program kalkulator luas persegi panjang.
+
+#### Latihan: Kalkulator Luas
+
+1.  Buat program yang meminta pengguna memasukkan **panjang**.
+2.  Minta pengguna memasukkan **lebar**.
+3.  Ubah kedua input menjadi tipe data angka (`int` atau `float`).
+4.  Hitung luasnya dengan rumus `panjang * lebar`.
+5.  Cetak hasilnya ke layar dengan format yang jelas.
+
+#### 🚨 Analisis Error yang Mungkin Terjadi pada Latihan Ini
+
+Saat mengerjakan latihan, Anda sangat mungkin akan bertemu salah satu dari error berikut. Memahaminya sekarang akan sangat membantu di masa depan.
+
+* **`TypeError`: can't multiply sequence by non-int of type 'str'**
+    * **Artinya:** Anda mencoba mengalikan sesuatu yang bukan angka (dalam hal ini, string).
+    * **Penyebab:** Ini adalah error paling umum untuk latihan ini. Ini terjadi karena Anda lupa mengubah hasil dari `input()` menjadi angka. Python tidak tahu cara mengalikan teks "10" dengan teks "5".
+    * **Contoh Kode yang Salah:**
+        ```python
+        panjang = input("Masukkan panjang: ") # Hasilnya adalah string "10"
+        lebar = input("Masukkan lebar: ")   # Hasilnya adalah string "5"
+        luas = panjang * lebar              # ERROR! Python bingung cara mengalikan teks
+        ```
+    * **Solusi:** Selalu konversi input yang seharusnya angka menjadi `int()` atau `float()` sebelum melakukan operasi matematika.
+        ```python
+        panjang = int(input("Masukkan panjang: "))
+        lebar = int(input("Masukkan lebar: "))
+        luas = panjang * lebar # BERHASIL! 10 * 5 dihitung
+        ```
+
+* **`ValueError`: invalid literal for int() with base 10: 'sepuluh'**
+    * **Artinya:** Nilai yang Anda coba ubah ke `int` tidak valid.
+    * **Penyebab:** Kode konversi Anda (`int(...)`) sudah benar, tetapi pengguna memasukkan input yang bukan angka (misalnya mengetik "sepuluh" bukannya "10").
+    * **Contoh Kode yang Benar, tapi Input Salah:**
+        ```python
+        # Kode ini sudah benar
+        panjang = int(input("Masukkan panjang: ")) # Pengguna mengetik "sepuluh"
+        # ERROR muncul di baris ini!
+        ```
+    * **Solusi (Untuk Saat Ini):** Cukup pastikan Anda memasukkan angka yang valid saat menguji program. Penanganan input yang salah dari pengguna akan kita pelajari di materi selanjutnya menggunakan `try-except`.
+
+---
+
+### 7. Penugasan
+
+Untuk memantapkan pemahaman, buatlah sebuah program kalkulator yang melakukan 4 operasi dasar.
+
+**Deskripsi Tugas:**
+1.  Buat program yang meminta pengguna memasukkan **dua buah angka**.
+2.  Gunakan `float()` untuk konversi tipe data agar program bisa menerima angka desimal (contoh: 15.5).
+3.  Lakukan operasi penjumlahan (`+`), pengurangan (`-`), perkalian (`*`), dan pembagian (`/`) pada kedua angka tersebut.
+4.  Simpan setiap hasil operasi ke dalam variabel yang berbeda (misal: `hasil_tambah`, `hasil_kurang`, dll).
+5.  Tampilkan **semua** hasil perhitungan ke layar dengan format yang jelas dan rapi.
+
+**Contoh Output yang Diharapkan:**
