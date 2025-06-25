@@ -9,7 +9,6 @@ Selamat datang di pertemuan pertama belajar dasar-dasar pemrograman dengan Pytho
 4.  [Input dan Output](#4-input-dan-output)
 5.  [Error Umum dan Debugging Dasar](#5-error-umum-dan-debugging-dasar)
 6.  [Latihan & Penjelasan Error](#6-latihan--penjelasan-error)
-7.  [Penugasan](#7-penugasan)
 
 ---
 
@@ -131,16 +130,3 @@ Saat mengerjakan latihan, Anda sangat mungkin akan bertemu salah satu dari error
     * **Solusi (Untuk Saat Ini):** Cukup pastikan Anda memasukkan angka yang valid saat menguji program. Penanganan input yang salah dari pengguna akan kita pelajari di materi selanjutnya menggunakan `try-except`.
 
 ---
-
-### 7. Penugasan
-
-Untuk memantapkan pemahaman, buatlah sebuah program kalkulator yang melakukan 4 operasi dasar.
-
-**Deskripsi Tugas:**
-1.  Buat program yang meminta pengguna memasukkan **dua buah angka**.
-2.  Gunakan `float()` untuk konversi tipe data agar program bisa menerima angka desimal (contoh: 15.5).
-3.  Lakukan operasi penjumlahan (`+`), pengurangan (`-`), perkalian (`*`), dan pembagian (`/`) pada kedua angka tersebut.
-4.  Simpan setiap hasil operasi ke dalam variabel yang berbeda (misal: `hasil_tambah`, `hasil_kurang`, dll).
-5.  Tampilkan **semua** hasil perhitungan ke layar dengan format yang jelas dan rapi.
-
-**Contoh Output yang Diharapkan:**
