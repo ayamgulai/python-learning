@@ -16,9 +16,9 @@ Setiap pertemuan memiliki foldernya sendiri (`pertemuan_1`, `pertemuan_2`, dst.)
 | Pertemuan | Topik Utama                                    | Link Materi                               |
 | :-------- | :-----------------------------------------     | :---------------------------------------- |
 | **1** | Fondasi Python                                     | [Lihat Materi](./module_1/README.md)   |
-| **2** | Logika, Alur Program & List [Menyusul]             | [Lihat Materi](./pertemuan_2/README.md)   |
-| **3** | Fungsi & Struktur Data Dictionary [Menyusul]       | [Lihat Materi](./pertemuan_3/README.md)   |
-| **4** | Pengenalan OOP, File I/O & Proyek Akhir [Menyusul] | [Lihat Materi](./pertemuan_4/README.md)   |
+| **2** | Logika, Alur Program & List [Menyusul]             | [Lihat Materi](./module_2/README.md)   |
+| **3** | Fungsi & Struktur Data Dictionary [Menyusul]       | [Lihat Materi](./module_3/README.md)   |
+| **4** | Pengenalan OOP, File I/O & Proyek Akhir [Menyusul] | [Lihat Materi](./module_4/README.md)   |
 
 ---
-Selamat Belajar!
+

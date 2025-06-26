@@ -7,8 +7,9 @@ Selamat datang di pertemuan pertama belajar dasar-dasar pemrograman dengan Pytho
 2.  [Tipe Data Dasar](#2-tipe-data-dasar)
 3.  [Operator dan Ekspresi](#3-operator-dan-ekspresi)
 4.  [Input dan Output](#4-input-dan-output)
-5.  [Error Umum dan Debugging Dasar](#5-error-umum-dan-debugging-dasar)
-6.  [Latihan & Penjelasan Error](#6-latihan--penjelasan-error)
+5.  [Casting](#5-Casting)
+6.  [Error Umum dan Debugging Dasar](#6-error-umum-dan-debugging-dasar)
+7.  [Latihan & Penjelasan Error](#7-latihan--penjelasan-error)
 
 ---
 
@@ -66,7 +67,32 @@ Sebuah **ekspresi** adalah kombinasi nilai dan operator yang menghasilkan nilai 
 
 ---
 
-### 5. Error Umum dan Debugging Dasar
+### 5. Casting
+Untuk mengubah suatu data menjadi tipe data yang spesifik. Casting dapat dipakai dengan ```int(), str(), float()``` . Contoh dalam code:
+
+Contoh pada ```int()```
+```python
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+```
+
+Contoh pada ```float()```
+```python
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+```
+
+Contoh pada ```str()```
+```python
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
+```
+
+### 6. Error Umum dan Debugging Dasar
 
 Error adalah hal yang wajar. Kenali tiga jenis error dasar ini:
 
@@ -87,7 +113,7 @@ Error adalah hal yang wajar. Kenali tiga jenis error dasar ini:
 
 ---
 
-### 6. Latihan & Penjelasan Error
+### 7. Latihan & Penjelasan Error
 
 Mari praktikkan konsep di atas dengan membuat program kalkulator luas persegi panjang.
 
