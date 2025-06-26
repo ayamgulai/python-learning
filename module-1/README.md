@@ -18,6 +18,7 @@ Untuk mulai menulis kode Python, kita butuh dua hal: **Python** itu sendiri dan 
 
 * **Pilihan A (Offline):** Instal **[Python](https://www.python.org/downloads/)** (jangan lupa centang "Add Python to PATH") dan **[Visual Studio Code](https://code.visualstudio.com/)**. Di VS Code, instal ekstensi "Python" dari Microsoft.
 * **Pilihan B (Online):** Gunakan **[Replit](https://replit.com/)**. Cukup daftar, buat "Repl" baru, dan pilih template "Python".
+* Gunakan **[Google Colab](https://colab.research.google.com/)** juga bisa. Biasanya untuk analisis data atau bikin model ML
 
 ---
 
